@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="evo-calendar.min.css">
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+
+  <div class="hindi">
+    <div id="calendar"></div>
+
+<!-- Remainder page. -->
+    <div>
+      <button > <a href="Remainder.html">Add Remainder.</a> </button>
+    </div>
+
+    
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js">
+  </script>
+  <script src="evo-calendar.min.js"></script>
+  <script>
+    $(document).ready(function() {
+    $('#calendar').evoCalendar({
+      
+      calendarEvents: [
+      {
+        id: 'events1', // Event's ID (required)
+        name: "New Year", // Event name (required)
+        date: "January/1/2020", // Event date (required)
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'events2',
+        name: "Lohri", 
+        date: "January/13/2021", 
+        type: "holiday", 
+        everyYear: true 
+      },
+      {
+        id: 'events3',
+        name: "Pongal / Makar Sakranti", 
+        date: "January/14/2021", 
+        type: "holiday", 
+        everyYear: true 
+      },
+      {
+        id: 'events4',
+        name: "Pongal/Makar Sakranti", 
+        date: "January/15/2021", 
+        type: "holiday", 
+        everyYear: true 
+      },
+      {
+        id: 'events5',
+        name: "Guru Gobind Singh Jayanti", 
+        date: "January/13/2021", 
+        type: "holiday", 
+        everyYear:true
+         
+      },
+      {
+        name: "Republic day", 
+        date: "January/26/2021", 
+        type: "Holiday", 
+        everyYear: true 
+      },
+      {
+        name: "World Cancer Day", 
+        date: "Febrauray/4/2021", 
+        type: "Day",
+        everyYear: true 
+      },
+      {
+      
+        name: "Rose Day", 
+        badge:"02/07-02/14",
+        date:["Febrauray/7/2021","Febrauray/14/2021"],
+        description:"Valentines Weeks.",
+        date: "Febrauray/7/2021", 
+        type: "Valentine Weeks Start", 
+        color: "#FF0000",
+        everyYear: true 
+      },
+      {
+        name:"World Radio Day",
+        date: "Febrauray/13/2021", 
+        type: " Valentine Week",
+        everyYear: true 
+      },
+      {
+        name:"Propose day",
+        date: "Febrauray/8/2021", 
+        type: "Week",
+        color: "#FF0000",
+        everyYear: true 
+      },
+      {
+        name:"Chocolate day",
+        date: "Febrauray/9/2021", 
+        type: "Week",
+        color: "#FF0000",
+        everyYear: true 
+      },
+      {
+        name:"Teddy day",
+        date: "Febrauray/10/2021", 
+        type: "Week",
+        color: "#FF0000",
+        everyYear: true 
+      },{
+        name:"Promise day",
+        date: "Febrauray/11/2021", 
+        type: "Week",
+        color: "#FF0000",
+        everyYear: true 
+      },{
+        name:"Hug day",
+        date: "Febrauray/12/2021", 
+        type: "Week",
+        color: "#FF0000",
+        everyYear: true 
+      },
+      {
+        name:"Valentine Week",
+        date: "Febrauray/14/2021", 
+        type: "Week",
+        color: "#FF0000",
+        everyYear: true 
+      },
+      {
+        name:"Slap day",
+        date: "Febrauray/15/2021", 
+        type: "Week",
+        color: "#FFFF00",
+        everyYear: true 
+      },
+      {
+        name:"Vasant Panchami",
+        date: "Febrauray/16/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        name:"Perfume day",
+        date: "Febrauray/17/2021", 
+        type: "Week",
+        color: "#FFFF00",
+        everyYear: true 
+      },
+      {
+        name:" Flirting day",
+        date: "Febrauray/18/2020", 
+        type: "Week",
+        color: "#FFFF00",
+        everyYear: true 
+      },
+      {
+        name:"Confession day",
+        date: "Febrauray/19/2021", 
+        type: "Week",
+        color: "#FFFF00",
+        everyYear: true 
+      },
+      {
+        name:"Missing day",
+        date: "Febrauray/20/2021", 
+        type: "Week",
+        color: "#FFFF00",
+        everyYear: true 
+      },
+      {
+        name:"Break-up day",
+        date: "Febrauray/21/2021", 
+        type: "Week",
+        color: "#FFFF00",
+        everyYear: true 
+      },
+    
+      {
+        name:"National Science Day",
+        date: "Febrauray/28/2021", 
+        type: "Day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      
+      {
+        id: 'events10', 
+        name:"Maha Shivratri",
+        date: "March/11/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events11', 
+        name:"Holika Dahan",
+        date: "March/28/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events12', 
+        name:"Holi",
+        date: "March/29/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events13', 
+        name:"Shab-e-barat",
+        date: "March/29/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events13', 
+        name:"Good Friday",
+        date: "April/2/2021", 
+        type: "Holiday",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events14', 
+        name:"Ambedkar Jayanti",
+        date: "April/14/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events15', 
+        name:"Tamil New Year",
+        date: "April/14/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events16', 
+        name:"World Heritage",
+        date: "April/18/2020", 
+        type: "Holiday",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events17', 
+        name:"Ram Navami",
+        date: "April/21/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events18', 
+        name:"World Creativity and Innovative Day",
+        date: "April/21/2020", 
+        type: "Holiday",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events19', 
+        name:"Earth Day",
+        date: "April/22/2020", 
+        type: "Holiday",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events20', 
+        name:"English Language Day",
+        date: "April/23/2020", 
+        type: "Holiday",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events21', 
+        name:"Mahavir Janyanti",
+        date: "April/25/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events22', 
+        name:"Hanuman Jayanti",
+        date: "April/27/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events23', 
+        name:"International Dance day",
+        date: "April/29/2020", 
+        type: "Holiday",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events24', 
+        name:"Foundation Day",
+        date: "May/1/2020", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events25', 
+        name:"World Laughter Day",
+        date: "May/2/2020", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      
+      {
+        id: 'events26', 
+        name:"Star Wars Day Day",
+        date: "May/4/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      
+      {
+        id: 'events27', 
+        name:"Jumu'atul Widaa",
+        date: "May/7/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      
+      {
+        id: 'events28', 
+        name:"World Red Cross Day",
+        date: "May/8/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      
+      {
+        id: 'events29', 
+        name:"Mother's Day",
+        date: "May/9/2021", 
+        type: "day",
+        color:"#00008B",
+        everyYear: true 
+      },
+      {
+        id: 'events30', 
+        name:"Rabindarnath Tagore ",
+        description:"Birthday",
+        date: "May/9/2021", 
+        type: "day",
+        color:"#00008B",
+        everyYear: true 
+      },
+      {
+        id: 'events31', 
+        name:"Nurses Day",
+        description:"Internatinal",
+        date: "May/12/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events32', 
+        name:"Akshaya Tritiya",
+        date: "May/14/2021", 
+        type: "day",
+        everyYear: true 
+      },
+      {
+        id: 'events33', 
+        name:"Eid-ul Fitra",
+        date: "May/14/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events34', 
+        name:"Astronomy Day",
+        description:"Internatinal",
+        date: "May/15/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events35', 
+        name:" Day of Families",
+        description:"Internatinal",
+        date: "May/15/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events35', 
+        name:"Tea Day",
+        description:"Internatinal",
+        date: "May/21/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events36', 
+        name:"Buddha Purnima",
+        date: "May/26/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events37', 
+        name:"No Tobacco Day",
+        description:"World",
+        date: "May/31/2020", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events38', 
+        name:"Day of parents",
+        description:"Global",
+        date: "June/1/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events39', 
+        name:"Formation day",
+        description:"Telangana",
+        date: "June/2/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events40', 
+        name:"Bicycle Day",
+        description:"World",
+        date: "June/1/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events41', 
+        name:"Environment Day",
+        description:"World",
+        date: "June/5/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events42', 
+        name:"Safety Day",
+        description:"World Food",
+        date: "June/7/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events43', 
+        name:"Oceans Day",
+        description:"World",
+        date: "June/8/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events44', 
+        name:"Labour Day",
+        description:"World Child",
+        date: "June/12/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events45', 
+        name:"Donor Day",
+        description:"Blood",
+        date: "June/14/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events46', 
+        name:"Picnic Day",
+        description:"World",
+        date: "June/18/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events47', 
+        name:"Father's Day",
+        date: "June/20/2021", 
+        type: "day",
+        color:"#00008B",
+        everyYear: true 
+      },
+      {
+        id: 'events48', 
+        name:"Music Day",
+        description:"World",
+        date: "June/21/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events49', 
+        name:"Yoga Day",
+        description:"International",
+        date: "June/21/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events50', 
+        name:"Olympic Day",
+        description:"World",
+        date: "June/23/2020", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events51', 
+        name:"Drug and Abuse ",
+        description:"International day and IIIicit Trafficking",
+        date: "June/26/2020", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events52', 
+        name:"Asteroid Day",
+        date: "June/30/2020", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events53', 
+        name:"Doctor Day",
+        date: "July/1/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events54', 
+        name:"Plastic Bag Free Day",
+        date: "July/3/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events54', 
+        name:"Population Day",
+        description:"world",
+        date: "July/11/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events55', 
+        name:"Rath Yatra Day",
+        description:"Celebrating in India",
+        date: "July/12/2021", 
+        type: "day",
+        everyYear: true 
+      },
+      {
+        id: 'events56', 
+        name:"Paper bag Day",
+        description:"world",
+        date: "July/12/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events57', 
+        name:"Simplicity Day",
+        description:"National",
+        date: "July/12/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events58', 
+        name:"Emoji Day",
+        description:"World",
+        date: "July/17/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events59', 
+        name:"Mandela Day",
+        description:"Internatinal Neslon",
+        date: "July/18/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events60', 
+        name:"Eid-al-Adha Day",
+        description:"Bakrid",
+        date: "July/21/2021", 
+        type: "day",
+        everyYear: true 
+      },
+      {
+        id: 'events61', 
+        name:"Guru Purnima Day",
+        description:"Celebrating in India",
+        date: "July/24/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events62', 
+        name:"Hepatitis Day",
+        description:"World",
+        date: "July/28/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events63', 
+        name:"Conservation Day",
+        description:"World Nature",
+        date: "July/28/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events63', 
+        name:"Tiger Day",
+        description:"World",
+        date: "July/29/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events64', 
+        name:"Friendship Day",
+        date: "August/1/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events65', 
+        name:"Handloom Day",
+        description:"National ",
+        date: "August/7/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events66', 
+        name:"Indigenous People",
+        description:"World ",
+        date: "August/9/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events67', 
+        name:"Youth Day",
+        description:"Internatinal ",
+        date: "August/12/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events68', 
+        name:"Hander,s Day",
+        description:"Internatinal Left ",
+        date: "August/13/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events69', 
+        name:"Naga Panchami",
+        date: "August/13/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events70', 
+        name:"Trophy Day",
+        description:"Nehruji got a trpohy that day. ",
+        date: "August/14/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events71', 
+        name:"Independence Day",
+        date: "August/15/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events72', 
+        name:"New Year",
+        description:"Parsi",
+        date: "August/16/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events73', 
+        name:"Muharram Day",
+        date: "August/19/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events74', 
+        name:"Photography Day",
+        description:"World ",
+        date: "August/19/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events75', 
+        name:"Onam",
+        date: "August/21/2021", 
+        type: "day",
+        everyYear: true 
+      },
+      {
+        id: 'events76', 
+        name:"Raksha Bandhan",
+        date: "August/22/2021", 
+        type: "day",
+        everyYear: true 
+      },
+      {
+        id: 'events78', 
+        name:"Sports Day",
+        description:"National ",
+        date: "August/29/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events79', 
+        name:"Janmashtami",
+        date: "August/30/2021", 
+        type: "day",
+        everyYear: true 
+      },
+      {
+        id: 'events80', 
+        name:"Coconut Day",
+        description:"World ",
+        date: "September/2/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events81', 
+        name:"Teacher's Day",
+        date: "September/5/2021", 
+        type: "day",
+        everyYear: true 
+      },
+      {
+        id: 'events82', 
+        name:"Day of Charity",
+        description:"International",
+        date: "September/5/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events83', 
+        name:"Literacy Day",
+        description:"International",
+        date: "September/8/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events84', 
+        name:"Ganesh Chaturthi",
+        date: "September/10/2021", 
+        type: "day",
+        everyYear: true 
+      },
+      {
+        id: 'events85', 
+        name:"Suicide Prevention Day",
+        description:"World",
+        date: "September/10/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events86', 
+        name:"Hindi Diwas Day",
+        date: "September/14/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events87', 
+        name:"Engineer's Day",
+        date: "September/15/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events88', 
+        name:"Day Of Democracy",
+        description:"International",
+        date: "September/15/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events89', 
+        name:"Ozone Day",
+        description:"World",
+        date: "September/16/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events90', 
+        name:"Day Of Peace",
+        description:"International",
+        date: "September/21/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events91', 
+        name:"Rose Day",
+        description:"World",
+        date: "September/22/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events92', 
+        name:"Pharmatics Day",
+        description:"World",
+        date: "September/25/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events92', 
+        name:"Tourism Day",
+        description:"World",
+        date: "September/27/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events93', 
+        name:"Heart Day",
+        description:"World",
+        date: "September/29/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events94', 
+        name:"Maritime Day",
+        description:"World",
+        date: "September/30/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events95', 
+        name:"Translation Day",
+        description:"World",
+        date: "September/30/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events96', 
+        name:"Gandhi Jayanti",
+        date: "October/1/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events97', 
+        name:"Lal Bahadur Jayanti",
+        date: "October/1/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events98', 
+        name:"Animal Day",
+        description:"World",
+        date: "October/4/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events99', 
+        name:"Navaratri",
+        date: "October/7/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events100', 
+        name:"Air Force Day",
+        description:"Indian",
+        date: "October/8/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events101', 
+        name:"Post Office Day",
+        description:"World",
+        date: "October/9/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events101', 
+        name:"Mental Day",
+        description:"World",
+        date: "October/10/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events102', 
+        name:"Maha Saptami",
+        date: "October/12/2021", 
+        type: "day",
+        everyYear: true 
+      },
+      {
+        id: 'events102', 
+        name:"Durga Ashtami",
+        date: "October/13/2021", 
+        type: "day",
+        everyYear: true 
+      },
+      {
+        id: 'events103', 
+        name:"Maha Navami",
+        date: "October/14/2021", 
+        type: "day",
+        everyYear: true 
+      },
+      {
+        id: 'events104', 
+        name:"Dussehra",
+        date: "October/15/2021", 
+        type: "day",
+        everyYear: true 
+      },
+      {
+        id: 'events105', 
+        name:"Food Day",
+        description:"World",
+        date: "October/16/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events106', 
+        name:"Milad un-nabi",
+        description:"Id-e-Milad",
+        date: "October/19/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events107', 
+        name:"Chef's Day",
+        description:"International",
+        date: "October/20/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events108', 
+        name:"Valmikki Jayanti",
+        date: "October/20/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events109', 
+        name:"Karva Chauth",
+        date: "October/24/2021", 
+        type: "Holiday",
+        everyYear: true 
+      },
+      {
+        id: 'events110', 
+        name:"Unity Day",
+        description:"National",
+        date: "October/31/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        id: 'events111', 
+        name:"Cities Day",
+        description:"Worlds",
+        date: "October/31/2021", 
+        type: "day",
+        color:"#FF5733",
+        everyYear: true 
+      },
+      {
+        name: "Vacation Leave",
+        badge: "02/13 - 02/15", // Event badge (optional)
+        date: ["February/13/2020", "February/15/2020"], // Date range
+        description: "Vacation leave for 3 days.", // Event description (optional)
+        type: "event",
+        color: "#63d867" // Event custom color (optional)
+      }
+    ]
+    })
+})
+  </script>
+  </body>
+</html>
