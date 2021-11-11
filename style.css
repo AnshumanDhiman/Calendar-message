@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Old Mincho', serif;
+  }
+  .hindi{
+    width: 100%;
+    height: 100%;
+    background :linear-gradient(45deg,#62c2c7,#b69cff);
+  }
+ #calendar{
+   
+ }
