@@ -1,6 +1,5 @@
 const express = require('express');
 const nodemailer= require('nodemailer');
-const cron =require('node-cron');
 
 const app =express();
 
@@ -14,7 +13,7 @@ app.listen("3000" ,function(request ,response){
      from :'onlineshare83@gmail.com',
      to : '2003010090@ipec.org.in',
      subject : 'happy birthday diya',
-    text:'hello haay'
+    text:'Give me a party'
 
  };
 

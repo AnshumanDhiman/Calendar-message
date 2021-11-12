@@ -5,10 +5,36 @@
     font-family: 'Zen Old Mincho', serif;
   }
   .hindi{
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     background :linear-gradient(45deg,#62c2c7,#b69cff);
   }
  #calendar{
    
  }
+
+ .english{
+   width: auto;
+   height: auto;
+   background :linear-gradient(45deg,#62c2c7,#b69cff);
+  
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+  
+ }
+ .sanskrit{
+   width: 150px;
+   height: 40px;
+   text-align: center;
+   text-decoration: none;
+   font-size: large;
+   color: black;
+   border: 6px solid #4CAF50; 
+   
+ }
+   
+ 
+
+ 
